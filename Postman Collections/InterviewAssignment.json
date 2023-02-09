@@ -88,6 +88,7 @@
 							"pm.expect(jsonData.sentCoinAmount).to.be.a('number');\r",
 							"pm.expect(jsonData.receivedCoinAmount).to.be.a('number');\r",
 							"pm.expect(jsonData.id).to.eql(pm.environment.get(\"id\"));\r",
+							"\r",
 							"pm.test(\"Task 2b): Check if the receivedCoinMarketPrice is equal to 'sentCoinAmount'/ 'receivedCoinAmount' \", function () {\r",
 							"pm.expect(jsonData.receivedCoinMarketPrice).to.eql(jsonData.sentCoinAmount/jsonData.receivedCoinAmount);\r",
 							"});\r",
@@ -123,22 +124,22 @@
 	],
 	"variable": [
 		{
-			"id": "653f5c56-156a-4bcb-aa50-11d14382ddc2",
+			"id": "c109dbb2-189d-4535-89f4-7c0d6595727e",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "6386808c-12ef-49de-961c-eb401873e545",
+			"id": "a92a615b-cd35-41b7-ab44-1f2cad5644bd",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "2055c437-3da9-467d-bcf5-5cf004760435",
+			"id": "419b9695-1b41-4c5e-928f-0db65a0ca9fe",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "a7cdb538-c513-4114-bbfb-1f302cb42aeb",
+			"id": "6692bb2c-defa-438e-9192-0331d2965771",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
