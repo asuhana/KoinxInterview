@@ -79,7 +79,7 @@
 						"id": "0aca977d-a114-4034-bd14-756879e6041b",
 						"exec": [
 							"\r",
-							"pm.test(\"Check if the response is as expected, with id from POST request response \", function () {\r",
+							"pm.test(\"Task 2a): Check if the response is as expected, with id from POST request response \", function () {\r",
 							"\r",
 							"    var jsonData=JSON.parse(responseBody);\r",
 							"\r",
@@ -123,22 +123,22 @@
 	],
 	"variable": [
 		{
-			"id": "997100dc-b380-474a-92ee-d7441b6881ba",
+			"id": "8b2cee3e-a60f-47c3-a929-758f3b94303e",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "19ec8414-6fd6-4a2f-bfb1-51320c3444e4",
+			"id": "95d5e6c9-d71b-4276-b44f-0b27a8fe1391",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "4b1bbb90-3605-48b8-bbca-82e1e5bb6577",
+			"id": "d7315c55-0c0e-4eb7-85c7-4bf0373c2735",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "be40dabd-ffcf-4216-a49e-46925f546703",
+			"id": "5bdb40f8-ea95-4672-a38b-c0127b7624d1",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
