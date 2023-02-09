@@ -46,7 +46,7 @@
 					}
 				}
 			],
-			"_postman_id": "b3a8749d-9877-46d2-9175-f03a0c77cb39",
+			"id": "b3a8749d-9877-46d2-9175-f03a0c77cb39",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -64,10 +64,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"coin1\": \"{{sentCoin}}\",\n  \"coin2\": \"{{receivedCoin}}\",\n  \"coin1Amount\": \"{{sentCoinAmount}}\",\n  \"coin2Amount\": \"{{receivedCoinAmount}}\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n  \"coin1\": \"{{sentCoin}}\",\n  \"coin2\": \"{{receivedCoin}}\",\n  \"coin1Amount\": \"{{sentCoinAmount}}\",\n  \"coin2Amount\": \"{{receivedCoinAmount}}\"\n}"
 				},
 				"url": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction"
 			},
@@ -92,14 +89,23 @@
 							"pm.expect(jsonData.receivedCoinAmount).to.be.a('number');\r",
 							"pm.expect(jsonData.id).to.eql(pm.environment.get(\"id\"));\r",
 							"pm.expect(jsonData.receivedCoinMarketPrice).to.eql(jsonData.sentCoinAmount/jsonData.receivedCoinAmount);\r",
+							"\r",
 							"}\r",
-							");"
+							");\r",
+							"\r",
+							"let dateNow = moment().format(“DD/MM/YYYY hh:mm:ss.SS”)\r",
+							"dateNow = moment().subtract(5,“minutes”).toDate()\r",
+							"let dateDiff = moment(Data.organizations[0].created_at).isAfter(dateNow)\r",
+							"\r",
+							"pm.test(\"Created within the last 5 minutes: \" , () => {\r",
+							"pm.expect(dateDiff).to.be.true\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "315368f4-6b78-4028-8b13-72ae65419f9a",
+			"id": "315368f4-6b78-4028-8b13-72ae65419f9a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -118,28 +124,24 @@
 	],
 	"variable": [
 		{
-			"id": "360b5a84-ab3d-46eb-86da-3f66d8863f9e",
+			"id": "55b32546-80d7-4204-a55d-56adba37e43a",
 			"key": "sentCoin",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "a9d4d773-1c59-42a1-b1e8-052267b8ead5",
+			"id": "e9660e9a-5d74-4ee4-8d71-10341891bce1",
 			"key": "receivedCoin",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "632ad934-0dd7-469e-9e8f-37a5061a6f61",
+			"id": "dc453de7-c0a7-4008-a246-33d6b5f85b1e",
 			"key": "sentCoinAmount",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "40c30c14-1fe8-428a-8b49-be20b3fc4db5",
+			"id": "00ebca6f-82e0-4ed6-bc6a-42934de3f05a",
 			"key": "receivedCoinAmount",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
