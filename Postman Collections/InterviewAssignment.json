@@ -93,7 +93,7 @@
 							"}\r",
 							");\r",
 							"\r",
-							"moment().format(\"DD/MM/YYYY hh:mm:ss.SS\")\r",
+							"let dateNow = moment().format(\"DD/MM/YYYY hh:mm:ss.SS\")\r",
 							"//dateNow = moment().subtract(5,\"minutes\").toDate()\r",
 							"//let dateDiff = moment(Data.organizations[0].created_at).isAfter(dateNow)\r",
 							"\r",
@@ -124,22 +124,22 @@
 	],
 	"variable": [
 		{
-			"id": "5a42429e-ae23-47a6-81ad-8fd66711c209",
+			"id": "308508d2-1cb1-427f-aca9-21090475a5e5",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "f8fbb888-267b-4595-b2cc-13f7250c5def",
+			"id": "c38e40dd-6bb7-4cca-be84-5b265da44072",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "33421087-262d-4644-9bf6-87c112e2bfb7",
+			"id": "b50ac5f0-2698-4feb-8ca2-60ce4814d5ae",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "b0715659-53e9-4bcc-bd23-68b7156b8da7",
+			"id": "649c73f1-567a-4b5a-905f-b8d832ca87dc",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
