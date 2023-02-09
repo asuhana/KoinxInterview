@@ -124,22 +124,22 @@
 	],
 	"variable": [
 		{
-			"id": "e365522d-0f4d-4d83-bf57-b36b7f486c66",
+			"id": "a137ba66-e3f6-483f-b330-d513f0494ecf",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "643337d4-b201-4184-91e8-6081ce4e50ad",
+			"id": "4dd11e79-aadb-4af7-8ad4-8505715f528b",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "4f19d847-5ae6-4039-9a76-f2e1d319cd9c",
+			"id": "c6b69c97-bf7f-412a-9d16-6abf8ae3f5aa",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "f8b81a26-79e0-433a-a811-36be21be06cc",
+			"id": "3fe4428d-696b-49ab-a0e7-970033406149",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
