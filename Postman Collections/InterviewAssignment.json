@@ -99,7 +99,7 @@
 							"\r",
 							"pm.test(\"Created within the last 5 minutes: \" , () => {\r",
 							"pm.expect(dateDiff).to.be.true\r",
-							"})"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -124,22 +124,22 @@
 	],
 	"variable": [
 		{
-			"id": "55b32546-80d7-4204-a55d-56adba37e43a",
+			"id": "2b6f8abb-8477-40aa-8f65-aefa2b47b604",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "e9660e9a-5d74-4ee4-8d71-10341891bce1",
+			"id": "910f3088-b5c5-4171-aa72-79e273b7ad04",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "dc453de7-c0a7-4008-a246-33d6b5f85b1e",
+			"id": "5c0605b8-9e5a-408a-b74a-c796c163bfa6",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "00ebca6f-82e0-4ed6-bc6a-42934de3f05a",
+			"id": "2a84bde3-bcdb-4c26-9968-f1c4d08d30f6",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
