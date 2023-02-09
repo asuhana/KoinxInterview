@@ -94,7 +94,7 @@
 							");\r",
 							"\r",
 							"pm.test(\"Response time is less than 10s\", () => {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});\r",
 							""
 						],
@@ -121,22 +121,22 @@
 	],
 	"variable": [
 		{
-			"id": "cac67af1-04d2-4894-9ab5-6e858b27b2da",
+			"id": "0481f9bf-541b-49fc-a520-f96235fbec30",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "3254e55b-d722-4877-a1b9-f2051364f5a9",
+			"id": "f5fed029-6cfa-427d-aff8-a84024220cfd",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "195492d9-80c1-48ec-a2dd-72c18329e282",
+			"id": "803221e7-79c4-4553-a4e2-540a0dffd42b",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "4266675a-0595-498a-897a-6a798e386e15",
+			"id": "63c73929-1551-4ee8-b064-86bffcf89329",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
