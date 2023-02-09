@@ -88,14 +88,14 @@
 							"pm.expect(jsonData.sentCoinAmount).to.be.a('number');\r",
 							"pm.expect(jsonData.receivedCoinAmount).to.be.a('number');\r",
 							"pm.expect(jsonData.id).to.eql(pm.environment.get(\"id\"));\r",
-							"pm.test(\"Check if the receivedCoinMarketPrice is equal to 'sentCoinAmount'/ 'receivedCoinAmount' \", function () {\r",
+							"pm.test(\"Task 2b): Check if the receivedCoinMarketPrice is equal to 'sentCoinAmount'/ 'receivedCoinAmount' \", function () {\r",
 							"pm.expect(jsonData.receivedCoinMarketPrice).to.eql(jsonData.sentCoinAmount/jsonData.receivedCoinAmount);\r",
 							"});\r",
 							"\r",
 							"}\r",
 							");\r",
 							"\r",
-							"pm.test(\"Check if the `created_at` field is within a 10 second interval after the time that the API request was made.\", () => {\r",
+							"pm.test(\"Task 2c): Check if the `created_at` field is within a 10 second interval after the time that the API request was made.\", () => {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});\r",
 							""
@@ -123,22 +123,22 @@
 	],
 	"variable": [
 		{
-			"id": "8b2cee3e-a60f-47c3-a929-758f3b94303e",
+			"id": "653f5c56-156a-4bcb-aa50-11d14382ddc2",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "95d5e6c9-d71b-4276-b44f-0b27a8fe1391",
+			"id": "6386808c-12ef-49de-961c-eb401873e545",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "d7315c55-0c0e-4eb7-85c7-4bf0373c2735",
+			"id": "2055c437-3da9-467d-bcf5-5cf004760435",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "5bdb40f8-ea95-4672-a38b-c0127b7624d1",
+			"id": "a7cdb538-c513-4114-bbfb-1f302cb42aeb",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
