@@ -93,13 +93,10 @@
 							"}\r",
 							");\r",
 							"\r",
-							"//let dateNow = moment().format(\"DD/MM/YYYY hh:mm:ss.SS\")\r",
-							"//dateNow = moment().subtract(5,\"minutes\").toDate()\r",
-							"//let dateDiff = moment(Data.organizations[0].created_at).isAfter(dateNow)\r",
-							"\r",
-							"//pm.test(\"Created within the last 5 minutes: \" , () => {\r",
-							"//pm.expect(dateDiff).to.be.true\r",
-							"//});"
+							"pm.test(\"Response time is less than 10s\", () => {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -124,22 +121,22 @@
 	],
 	"variable": [
 		{
-			"id": "43e9d878-9de0-402d-bd09-3acf000f2808",
+			"id": "530546a9-856c-4efb-9a38-fbe49176ef0d",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "8dc467f8-b205-44a1-a1d2-c140e8be2014",
+			"id": "fd4dee50-102c-4d6f-8ed0-c86307b19032",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "d1369720-e27e-48a4-b8c9-0026f5606ab4",
+			"id": "1b0cc8d9-d496-4397-bdcf-a52bc8b4a36d",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "2929e766-3f78-44dc-9e3a-75e4abdd7cd4",
+			"id": "d3046d0d-b766-4f48-814d-ce1440f6421b",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
