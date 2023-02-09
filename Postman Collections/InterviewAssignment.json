@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "cac3623d-f292-4eab-87fd-5104d59f9dce",
+		"name": "QAInterview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b76261b2-0630-4fb6-8d7f-b97b799da3df",
+						"exec": [
+							"const randomnum = Math.floor((Math.random()*100+1));\r",
+							"var randomstr = \"john\"+Math.random().toString(36).substring(2);\r",
+							"\r",
+							"pm.collectionVariables.set(\"sentCoin\",\"INR\");\r",
+							"pm.collectionVariables.set(\"receivedCoin\",\"USDT\");\r",
+							"pm.collectionVariables.set(\"sentCoinAmount\",randomnum);\r",
+							"pm.collectionVariables.set(\"receivedCoinAmount\",randomnum);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "fa0bc2f6-c709-4e24-b38b-04cc2ae4b81a",
+						"exec": [
+							"\r",
+							"var jsonData=JSON.parse(responseBody);\r",
+							"pm.environment.set(\"id\",jsonData.id);\r",
+							"\r",
+							"pm.test(\"Check response\", function () {\r",
+							"pm.expect(jsonData.sentCoin).to.eql(\"INR\");\r",
+							"pm.expect(jsonData.receivedCoin).to.eql(\"USDT\");\r",
+							"pm.expect(jsonData.sentCoinAmount).to.be.a('number');\r",
+							"pm.expect(jsonData.receivedCoinAmount).to.be.a('number');\r",
+							"}\r",
+							");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "b3a8749d-9877-46d2-9175-f03a0c77cb39",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"coin1\": \"{{sentCoin}}\",\n  \"coin2\": \"{{receivedCoin}}\",\n  \"coin1Amount\": \"{{sentCoinAmount}}\",\n  \"coin2Amount\": \"{{receivedCoinAmount}}\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Task2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0aca977d-a114-4034-bd14-756879e6041b",
+						"exec": [
+							"\r",
+							"pm.test(\"Check response\", function () {\r",
+							"\r",
+							"    var jsonData=JSON.parse(responseBody);\r",
+							"\r",
+							"pm.expect(jsonData.sentCoin).to.eql(\"INR\");\r",
+							"pm.expect(jsonData.receivedCoin).to.eql(\"USDT\");\r",
+							"pm.expect(jsonData.sentCoinAmount).to.be.a('number');\r",
+							"pm.expect(jsonData.receivedCoinAmount).to.be.a('number');\r",
+							"pm.expect(jsonData.id).to.eql(pm.environment.get(\"id\"));\r",
+							"pm.expect(jsonData.receivedCoinMarketPrice).to.eql(jsonData.sentCoinAmount/jsonData.receivedCoinAmount);\r",
+							"}\r",
+							");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "315368f4-6b78-4028-8b13-72ae65419f9a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": "https://x8ki-letl-twmt.n7.xano.io/api:gHPd8le5/transaction/{{id}}"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "360b5a84-ab3d-46eb-86da-3f66d8863f9e",
+			"key": "sentCoin",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "a9d4d773-1c59-42a1-b1e8-052267b8ead5",
+			"key": "receivedCoin",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "632ad934-0dd7-469e-9e8f-37a5061a6f61",
+			"key": "sentCoinAmount",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "40c30c14-1fe8-428a-8b49-be20b3fc4db5",
+			"key": "receivedCoinAmount",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
