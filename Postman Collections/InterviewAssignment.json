@@ -95,7 +95,7 @@
 							"}\r",
 							");\r",
 							"\r",
-							"pm.test(\"Response time is less than 10s\", () => {\r",
+							"pm.test(\"Check if the `created_at` field is within a 10 second interval after the time that the API request was made.\", () => {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});\r",
 							""
@@ -123,22 +123,22 @@
 	],
 	"variable": [
 		{
-			"id": "77173046-cad0-4e1f-82d8-946449caec80",
+			"id": "997100dc-b380-474a-92ee-d7441b6881ba",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "f1fbb425-d8a7-4171-9f46-7d5dafba99ec",
+			"id": "19ec8414-6fd6-4a2f-bfb1-51320c3444e4",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "74a187ac-3982-4721-9543-9fc417f4740f",
+			"id": "4b1bbb90-3605-48b8-bbca-82e1e5bb6577",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "a718acfd-367a-4739-875a-f5db00ab5fe8",
+			"id": "be40dabd-ffcf-4216-a49e-46925f546703",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
