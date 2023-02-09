@@ -94,7 +94,7 @@
 							");\r",
 							"\r",
 							"let dateNow = moment().format(\"DD/MM/YYYY hh:mm:ss.SS\")\r",
-							"dateNow = moment().subtract(5,\"minutes\").toDate()\r",
+							"//dateNow = moment().subtract(5,\"minutes\").toDate()\r",
 							"//let dateDiff = moment(Data.organizations[0].created_at).isAfter(dateNow)\r",
 							"\r",
 							"//pm.test(\"Created within the last 5 minutes: \" , () => {\r",
@@ -124,22 +124,22 @@
 	],
 	"variable": [
 		{
-			"id": "a3ed6430-0ee0-4b87-b557-6797a4aa76f1",
+			"id": "003346e7-02c2-4961-b957-5ac2bc42e846",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "dcb94210-de52-4d4d-b6c4-9cfe8dfae474",
+			"id": "98c9740e-0c10-4a49-8db0-ec8e02f982ae",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "2e3e620f-a03c-4a3d-900a-13153fc16e02",
+			"id": "fd284f80-6af7-4330-99fd-9747b03e7fef",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "6d8c2b3b-c5fc-4c6d-b5ff-1d822016046f",
+			"id": "ef2de8ba-5950-494e-91cd-ad7a8b212287",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
