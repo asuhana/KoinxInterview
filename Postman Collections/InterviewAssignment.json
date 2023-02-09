@@ -34,7 +34,7 @@
 							"var jsonData=JSON.parse(responseBody);\r",
 							"pm.environment.set(\"id\",jsonData.id);\r",
 							"\r",
-							"pm.test(\"Check response\", function () {\r",
+							"pm.test(\"Check response to be as expected\", function () {\r",
 							"pm.expect(jsonData.sentCoin).to.eql(\"INR\");\r",
 							"pm.expect(jsonData.receivedCoin).to.eql(\"USDT\");\r",
 							"pm.expect(jsonData.sentCoinAmount).to.be.a('number');\r",
@@ -121,22 +121,22 @@
 	],
 	"variable": [
 		{
-			"id": "51881787-f854-47e0-b599-1d61e4b6cc4a",
+			"id": "bc9e875e-90b8-4bd0-99da-97bff3c87e1a",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "0595581f-021b-489e-9297-e1d6bb8fd126",
+			"id": "4c789625-a803-4d14-98a5-54552c98fe81",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "091a82ea-0ea4-4f34-95e7-ac65a57e2e72",
+			"id": "489b0b14-c2e1-4727-b60d-558d9a1b84d7",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "db0a2993-768f-431b-bd74-589c15dd3480",
+			"id": "4ce13463-3e70-4a87-b4f7-4231cece9b71",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
