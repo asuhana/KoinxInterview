@@ -91,10 +91,9 @@
 							"\r",
 							"pm.test(\"Task 2b): Check if the receivedCoinMarketPrice is equal to 'sentCoinAmount'/ 'receivedCoinAmount' \", function () {\r",
 							"pm.expect(jsonData.receivedCoinMarketPrice).to.eql(jsonData.sentCoinAmount/jsonData.receivedCoinAmount);\r",
-							"});\r",
+							"    });\r",
 							"\r",
-							"}\r",
-							");\r",
+							"});\r",
 							"\r",
 							"pm.test(\"Task 2c): Check if the `created_at` field is within a 10 second interval after the time that the API request was made.\", () => {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
@@ -124,22 +123,22 @@
 	],
 	"variable": [
 		{
-			"id": "e1598bd2-7843-4e11-b8f2-9ba3af3df230",
+			"id": "6dad303f-18f9-4a28-a679-4e3b781e80f0",
 			"key": "sentCoin",
 			"value": ""
 		},
 		{
-			"id": "4c77607a-cbdc-4292-9375-85d95ef457ef",
+			"id": "8de14103-fd97-4673-994d-66e47dc2a6ab",
 			"key": "receivedCoin",
 			"value": ""
 		},
 		{
-			"id": "06268d6d-fe25-4dae-98a5-44e9616e9c2e",
+			"id": "1eb4bb62-5a38-434e-80ed-affec70fa36b",
 			"key": "sentCoinAmount",
 			"value": ""
 		},
 		{
-			"id": "abcc5cf7-b038-4372-b9d5-fdbc5e7be31f",
+			"id": "234cdb18-9c56-44b7-809f-067bfd327e89",
 			"key": "receivedCoinAmount",
 			"value": ""
 		}
